@@ -13,3 +13,4 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'MyCtrl1'});
   $routeProvider.otherwise({redirectTo: '/home'});
 }]);
+    

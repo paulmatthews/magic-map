@@ -4,5 +4,6 @@
 <img src="http://maps.google.com/maps/api/staticmap?center=30.3253793,-81.654263&size=450x300&sensor=true&markers={{map.markers}}">
 <div>
     <h4>Marker list lat and long (ex: '30.3253793,-81.654263'):</h4>
-    <input type="text" ng-model="map.markers">
+    <textarea type="text" id="markers" ng-model="map.markers"></textarea>
+    <pre>{{map.markers | niceRead}}</pre>
 </div>
