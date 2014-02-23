@@ -1,9 +1,8 @@
 <h1>Magic Mapper</h1>
-<p>Welcome to the Magic Mapper</p>
+<h5>It's Magic</h5>
 <br>
-<img src="http://maps.google.com/maps/api/staticmap?center=30.3253793,-81.654263&size=450x300&sensor=true&markers={{map.markers}}">
+<img src="http://maps.google.com/maps/api/staticmap?center=30.3253793,-81.654263&size=450x300&sensor=true&markers={{map.locs | mapUrl}}">
 <div>
-    <h4>Marker list lat and long (ex: '30.3253793,-81.654263'):</h4>
-    <textarea type="text" id="markers" ng-model="map.markers"></textarea>
-    <pre>{{map.markers | niceRead}}</pre>
+    <h4>Enter a new lat and long (ex: '30.3253793,-81.654263'):</h4>
+    <input type="text" ng-model="newloc"><button ng-click="addPlace()">Add Place</button>
 </div>

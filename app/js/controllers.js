@@ -7,9 +7,10 @@ angular.module('myApp.controllers', []).
     $scope.map = Map;
     $scope.addPlace = function() {
       var place = {},
-          latlong = document.getElementById('place').value.split(',');
+          latlong = $scope.newloc.split(',');
       place.latitude = latlong[0];
       place.longitude = latlong[1];
+      console.log($scope.map.locs);
       $scope.map.locs.push(place);
     }
   }])

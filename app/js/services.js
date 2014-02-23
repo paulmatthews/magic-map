@@ -23,15 +23,6 @@ angular.module('myApp.services', []).
         longitude: '-81.64263'
       }
     ];
-    Map.markers = mkrs();
-    
-    function mkrs() {
-      var m = "";
-      for (var i=0;i<Map.locs.length;i++) {
-        m = m + Map.locs[i].latitude + ',' + Map.locs[i].longitude + '%7C';
-      }
-      return m;
-    };
     
     return Map;
   })
