@@ -4,5 +4,8 @@
 <img src="http://maps.google.com/maps/api/staticmap?center=30.3253793,-81.654263&size=450x300&sensor=true&markers={{map.locs | mapUrl}}">
 <div>
     <h4>Enter a new lat and long (ex: '30.3253793,-81.654263'):</h4>
-    <input type="text" ng-model="newloc"><button ng-click="addPlace()">Add Place</button>
+    <pre>{{map.locs | mapUrl | niceRead}}</pre>
+    <input type="text" ng-model="newloc">
+    <button ng-click="places('add')">Add Place</button>
+    <button ng-click="places('remove')">Remove Place</button>
 </div>
