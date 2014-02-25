@@ -1,5 +1,33 @@
 /* app css stylesheet */
 
 #markers {
-  width: 65%;
+  width:65%;
+}
+table {
+  margin-bottom:2rem;
+  border-collapse:collapse;
+}
+thead {
+  color:#424242;
+}
+thead tr:first-child {
+  font-size: 1.25rem;
+}
+td {
+  padding:0 2rem;
+  border:1px solid #2E2E2E;
+}
+tbody tr:nth-child(odd) {
+  background:#C6C6C6;
+}
+td:first-child {
+  padding:0 .5rem;
+  text-align:right;
+  font-weight: 700;
+}
+td:last-child {
+  padding:0 .5rem;
+}
+td:last-child:hover {
+  cursor:pointer;
 }
