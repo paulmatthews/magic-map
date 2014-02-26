@@ -18,7 +18,6 @@ angular.module('myApp.filters', []).
                 e[i].name + '%7C';
           }
           str = str.replace(/ /g, '%20C');
-          console.log(str);
           return str.replace(/%7C$/, '');
       };
   });
