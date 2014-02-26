@@ -1,0 +1,23 @@
+<thead>
+  <tr>
+    <th></th>
+    <th colspan="3">Locations</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th></th>
+    <th>Name</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th></th>
+  </tr>  
+</thead>
+<tbody>
+  <tr class="location-row" ng-repeat="loc in map.locs">
+    <td>{{$index + 1}}</td>
+    <td>{{loc.name}}</td>
+    <td>{{loc.latitude}}</td>
+    <td>{{loc.longitude}}</td>
+    <td ng-click="removePlace($index)">{{'\u2718'}}</td>
+  </tr>
+</tbody>
