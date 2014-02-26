@@ -3,7 +3,7 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-  controller('MyCtrl1', ['$scope', 'Map', function($scope, Map) {
+  controller('MapCtrl', ['$scope', 'Map', function($scope, Map) {
     $scope.map = Map;
     
     /* Add new place to map.locs */
