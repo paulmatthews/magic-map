@@ -17,6 +17,8 @@ angular.module('myApp.filters', []).
                 e[i].latitude + ',' + e[i].longitude + '%7C' :
                 e[i].name + '%7C';
           }
-          return str;
+          str = str.replace(/ /g, '%20C');
+          console.log(str);
+          return str.replace(/%7C$/, '');
       };
   });
