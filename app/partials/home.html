@@ -3,30 +3,7 @@
 <br>
 <img src="http://maps.google.com/maps/api/staticmap?center=Jacksonville,FL&size=450x300&sensor=true&markers={{map.locs | mapUrl}}">
 <div>
-    <table>
-      <thead>
-        <tr>
-          <th></th>
-          <th colspan="2">Locations</th>
-          <th></th>
-        </tr>
-        <tr>
-          <th></th>
-          <th>Latitude</th>
-          <th>Longitude</th>
-          <th></th>
-        </tr>  
-      </thead>
-      <tbody>
-        <tr class="location-row" ng-repeat="loc in map.locs">
-          <td>{{$index + 1}}</td>
-          <td>{{loc.latitude}}</td>
-          <td>{{loc.longitude}}</td>
-          <td ng-click="removePlace(loc)">{{'\u2718'}}</td>
-        </tr>
-      </tbody>
-    </table>
-    <h4>Enter a new lat and long (ex: '30.3253793,-81.654263'):</h4>
-    <input type="text" ng-model="newloc">
-    <button ng-click="places('add')">Add Place</button>
+  <table ng-location-list></table>
+    
+  <button ng-click="addNew()">Add Place</button>
 </div>

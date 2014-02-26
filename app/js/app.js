@@ -11,6 +11,7 @@ angular.module('myApp', [
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'MapCtrl'});
+  $routeProvider.when('/new', {templateUrl: 'partials/new.html', controller: 'NewCtrl'});
   $routeProvider.otherwise({redirectTo: '/home'});
 }]);
     
