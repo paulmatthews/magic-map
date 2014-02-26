@@ -5,5 +5,9 @@
 <div>
   <table ng-location-list></table>
     
-  <button ng-click="addNew()">Add Place</button>
+  <h4>Enter a new point</h4>
+  <form>
+    Name: <input type="text" ng-model="name"><br>
+    <button ng-click="add()">Add Point</button>
+  </form>
 </div>
