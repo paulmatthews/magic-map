@@ -13,11 +13,11 @@ angular.module('myApp.filters', []).
           var str = "";
           for (var i=0;i<e.length;i++) {
               str += typeof e[i].name === 'undefined' ||
-                e[i].name.localeCompare('') === 0  ? 
+                e[i].name.localeCompare('') === 0  ?
                 e[i].latitude + ',' + e[i].longitude + '%7C' :
                 e[i].name + '%7C';
           }
-          str = str.replace(/ /g, '%20C');
+          str = str.replace(/ /g, '%20');
           return str.replace(/%7C$/, '');
       };
   });
